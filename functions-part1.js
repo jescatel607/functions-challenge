@@ -1,51 +1,59 @@
 let fox = "Jumped Over The Lazy Dog";
 
-// challenge 1
-// readme.md link to challenge 1
-// The goal of this challenge is to create a function that will take in a string
-// and return an additional string at the end. YOU CANNOT APPEND THE STRING MANUALLY.
+// Challenge 1: String Interpolation
+// README: [Link to Challenge 1]
+// Goal: Create a function that adds "Over The Fence" to the end of the input string.
+// Error: The function should return "Jumped Over The Lazy Dog Over The Fence".
 function jumpOverFence(fox) {
-  // your code here (HINT: use string interpolation, WHICH IS ADDING A VARIABLE TO A STRING)
-  // complete this so that the function returns "The Lazy Brown Fox Jumps Over The Fence"
+  // Your code here (Hint: Use string interpolation to append "Over The Fence")
+  // Example: return `${fox} Over The Fence`;
 }
 
-// test the function
-console.log(jumpOverFence(fox)); // should return "The Lazy
+// Test Challenge 1
+console.log(jumpOverFence(fox)); // Expected: "Jumped Over The Lazy Dog Over The Fence"
 
-// challenge 2
-// You will need to take a number and return true or false if the number is even or odd
+// Challenge 2: Even or Odd
+// Goal: Create a function that returns true if a number is even, false if odd.
+// Error: Incorrect true/false return value based on even/odd check.
 function isEvenOrOdd(num) {
-  // your code here (HINT: use % MODULUS operator DIVIDED BY 2)
+  // Your code here (Hint: Use the modulus operator % to check for remainder when divided by 2)
+  // Example: return num % 2 === 0;
 }
 
-// test the function
-console.log(isEvenOrOdd(10)); // should return true
-console.log(isEvenOrOdd(5)); // should return false
+// Test Challenge 2
+console.log(isEvenOrOdd(10)); // Expected: true
+console.log(isEvenOrOdd(5));  // Expected: false
 
-// challenge 3
-// The goal of this challenge is to create a function that will convert celsius to fahrenheit
+// Challenge 3: Celsius to Fahrenheit Conversion
+// Goal: Convert Celsius to Fahrenheit using the formula (C * 9/5) + 32.
+// Error: Incorrect Fahrenheit conversion result.
 function celsiusToFahrenheit(celsiusNumber) {
-  // your code here (HINT: use the formula (C * 9/5) + 32) and return the new fahrenheit number passed in as celsius
+  // Your code here (Hint: Apply the formula (C * 9/5) + 32)
+  // Example: return (celsiusNumber * 9/5) + 32;
 }
 
-// test the function with degree symbol
-console.log(celsiusToFahrenheit(30)); // should return 86
-console.log(celsiusToFahrenheit(0)); // should return 32
+// Test Challenge 3
+console.log(celsiusToFahrenheit(30)); // Expected: 86
+console.log(celsiusToFahrenheit(0));  // Expected: 32
 
-// challenge 4
-// find the max number in an array
+// Challenge 4: Find Maximum Number in Array
+// Goal: Find the largest number in an array.
+// Error: Incorrect maximum number returned.
 function findMaxNumber(arr) {
-  // your code here (HINT: use Math.max)
+  // Your code here (Hint: Use Math.max(...arr))
+  // Example: return Math.max(...arr);
 }
 
-// test the function
-console.log(findMaxNumber([1, 2, 3, 4, 5])); // should return 5
+// Test Challenge 4
+console.log(findMaxNumber([1, 2, 3, 4, 5])); // Expected: 5
 
-// challenge 5
-//  create a function that will wait 2 seconds and then log "Hello World"
+// Challenge 5: Asynchronous "Hello World"
+// Goal: Log "Hello World" to the console after 2 seconds.
+// Error: "Hello World" not logged or logged immediately, not after 2 seconds.
 function sayHelloWorld() {
-  // your code here (HINT: use setTimeout)
+  // Your code here (Hint: Use setTimeout to delay the console.log)
+  // Example: setTimeout(() => console.log("Hello World"), 2000);
 }
 
-// test the function
-sayHelloWorld(); // should log "Hello World" after 2 seconds
+// Test Challenge 5
+sayHelloWorld(); // Expected: "Hello World" logged after 2 seconds

@@ -1,44 +1,51 @@
-// Increased Function Challenges: 1-5
+// increased_challenges.js
 
-// challenge 1
-// create a function that will take in a number and return the number squared
+// Challenge 1: Square a Number
+// Goal: Create a function that squares a given number.
+// Error: Incorrect squared result.
 function squareNumber(num) {
-  // your code here (HINT: use Math.pow OR multiply the number by itself)
+  // Your code here (Hint: Use Math.pow(num, 2) or num * num)
+  // Example: return num * num;
 }
-// test the function
-console.log(squareNumber(4)); // should return 16
+// Test Challenge 1
+console.log(squareNumber(4)); // Expected: 16
 
-// challenge 2
-// create a function that will take in a string and return the string repeated 3 times using a loop
+// Challenge 2: Repeat String 3 Times
+// Goal: Create a function that repeats a string three times using a loop.
+// Error: Incorrect repeated string or incorrect number of repetitions.
 function repeatString(str) {
-  // your code here (HINT: create a variable inside the function, then use a loop to add to that variable, then return thr string)
+  // Your code here (Hint: Use a loop to concatenate the string 3 times)
+  // Example: let result = ""; for (let i = 0; i < 3; i++) { result += str; } return result;
 }
-// test the function
-console.log(repeatString("Hello")); // should return "HelloHelloHello"
+// Test Challenge 2
+console.log(repeatString("Hello")); // Expected: "HelloHelloHello"
 
-// challenge 3
-// build a function that has scoped variables and returns a string
+// Challenge 3: Scoped Variables and String Return
+// Goal: Create a function with scoped variables and return a specific string.
+// Error: Incorrect string returned or scoping issues.
 function scopingData() {
-  // your code here (HINT: create a variable, create a function inside this function, and return the inner function)
+  // Your code here (Hint: Use nested functions or block scope to manage variables)
+  // Example: let message = "Hello"; function inner() { return message + " World"; } return inner();
 }
-// test the function
-console.log(scopingData()); // should return "Hello World"
+// Test Challenge 3
+console.log(scopingData()); // Expected: "Hello World"
 
-// challenge 4
-// create a function that will take in a string and return the string reversed
+// Challenge 4: Reverse a String
+// Goal: Create a function that reverses a given string.
+// Error: Incorrect reversed string.
 function reverseString(str) {
-  // your code here (HINT: use String.split, String.reverse, and String.join methods, look at w3schools for help on each of these methods)
-  // HINT: assign a new name for the string passed in, then after the equals, use the above methods like so: str.function.function.function,
-  // You will need to make sure you are assigning quotes inside the parentheses to the first and last function in the above methods.
-  // Return the new string.
+  // Your code here (Hint: Use split, reverse, and join methods)
+  // Example: return str.split("").reverse().join("");
 }
-// test the function
-console.log(reverseString("Hello")); // should return "olleH"
+// Test Challenge 4
+console.log(reverseString("Hello")); // Expected: "olleH"
 
-// challenge 5
-// create a function that will return a random number between 1 and 10
+// Challenge 5: Random Number Between 1 and 10
+// Goal: Create a function that returns a random number between 1 and 10 (inclusive).
+// Error: Random number outside the 1-10 range or not a number.
 function randomNumber() {
-  // your code here (HINT: use Math.random)
+  // Your code here (Hint: Use Math.random() and Math.floor())
+  // Example: return Math.floor(Math.random() * 10) + 1;
 }
-// test the function
-console.log(randomNumber()); // should return a random number between 1 and 10
+// Test Challenge 5
+console.log(randomNumber()); // Expected: A random number between 1 and 10

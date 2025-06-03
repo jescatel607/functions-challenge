@@ -4,6 +4,7 @@
 // Goal: Create a function that squares a given number.
 // Error: Incorrect squared result.
 function squareNumber(num) {
+  return num * num;
   // Your code here (Hint: Use Math.pow(num, 2) or num * num)
   // Example: return num * num;
 }
@@ -14,6 +15,11 @@ console.log(squareNumber(4)); // Expected: 16
 // Goal: Create a function that repeats a string three times using a loop.
 // Error: Incorrect repeated string or incorrect number of repetitions.
 function repeatString(str) {
+  let result = "";
+  for (let i = 0; i < 3; i++) {
+    result += str;
+  }
+  return result;
   // Your code here (Hint: Use a loop to concatenate the string 3 times)
   // Example: let result = ""; for (let i = 0; i < 3; i++) { result += str; } return result;
 }
@@ -24,6 +30,11 @@ console.log(repeatString("Hello")); // Expected: "HelloHelloHello"
 // Goal: Create a function with scoped variables and return a specific string.
 // Error: Incorrect string returned or scoping issues.
 function scopingData() {
+  let message = "Hello";
+  function inner() {
+    return message + "World";
+  }
+  return inner();
   // Your code here (Hint: Use nested functions or block scope to manage variables)
   // Example: let message = "Hello"; function inner() { return message + " World"; } return inner();
 }
@@ -44,6 +55,7 @@ console.log(reverseString("Hello")); // Expected: "olleH"
 // Goal: Create a function that returns a random number between 1 and 10 (inclusive).
 // Error: Random number outside the 1-10 range or not a number.
 function randomNumber() {
+  return Math.floor(Math.random() * 10) + 1;
   // Your code here (Hint: Use Math.random() and Math.floor())
   // Example: return Math.floor(Math.random() * 10) + 1;
 }
